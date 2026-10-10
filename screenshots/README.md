@@ -1,36 +1,38 @@
 # 📸 Dokumentasi Visual & Screenshot GluPulse
 
-Folder ini berisi tangkapan layar (*screenshots*) resmi antarmuka aplikasi GluPulse dan arsitektur alur Langflow:
+Folder ini berisi tangkapan layar (*screenshots*) resmi antarmuka aplikasi GluPulse, integrasi bot, dan arsitektur alur Langflow:
 
 ---
 
 ## 📋 Daftar File Screenshot
 
-| No | Nama File | Deskripsi Tampilan |
-| :---: | :--- | :--- |
-| **01** | `01-landing-page.png` | Tampilan Beranda 100vh Liquid Glass + Model 3D Denyut Jantung Ruby Red |
-| **02** | `02-health-check-form.png` | Formulir Klinis Cek Kesehatan (*Preset Glukosa & Multi-Select Gejala*) |
-| **03** | `03-langflow-workflow-1.png` | Arsitektur Canvas Langflow Bagian 1 (*Data Ingestion & Astra DB RAG*) |
-| **04** | `04-langflow-workflow-2.png` | Arsitektur Canvas Langflow Bagian 2 (*Multi-Agent Decision Routing*) |
-| **05** | `05-langflow-bot-integration.png` | Antarmuka Dialog Interaktif Asisten AI GluPulse |
-| **06** | `06-output-emergency-triage.png` | Contoh Respons Triase Darurat & Protokol Rule of 15 (<70 mg/dL) |
-| **07** | `07-output-nutrition-recommendation.png` | Contoh Rekomendasi Menu Nutrisi Rendah GI & Aktivitas Fisik |
+| Kategori | Nama File | Deskripsi Tampilan |
+| :--- | :--- | :--- |
+| **01-user-interface** | `01-user-interface-landing.png` | Tampilan Beranda (100vh Liquid Glass Hero + 3D Jantung Ruby Red) |
+| **01-user-interface** | `01-user-interface-health-check.png` | Formulir Klinis Cek Kesehatan (*Preset Glukosa & Gejala*) |
+| **02-langflow-workflow** | `02-langflow-workflow-1.png` | Alur Canvas Langflow (*Data Ingestion & Astra DB RAG*) |
+| **02-langflow-workflow** | `02-langflow-workflow-2.png` | Alur Canvas Langflow (*Multi-Agent Decision Routing*) |
+| **03-bob-integration** | `03-bob-integration.png` | Integrasi Bot Asisten AI Klinis GluPulse |
+| **04-output** | `04-output-emergency.png` | Respons Triase Darurat & Protokol Rule of 15 |
+| **04-output** | `04-output-nutrition.png` | Rekomendasi Menu Nutrisi Rendah GI & Aktivitas Fisik |
 
 ---
 
 ## 💡 Cara Menyematkan ke Markdown
 
 ```markdown
-### 1. Tampilan Beranda (Landing Page)
-![Landing Page](screenshots/01-landing-page.png)
+### 1. User Interface
+![UI Landing Page](screenshots/01-user-interface-landing.png)
+![UI Health Check](screenshots/01-user-interface-health-check.png)
 
-### 2. Formulir Klinis Satu-Klik
-![Health Check Form](screenshots/02-health-check-form.png)
+### 2. Langflow Workflow
+![Langflow Flow 1](screenshots/02-langflow-workflow-1.png)
+![Langflow Flow 2](screenshots/02-langflow-workflow-2.png)
 
-### 3. Alur Visual Langflow AI
-![Langflow Workflow](screenshots/03-langflow-workflow-1.png)
-![Langflow Multi-Agent](screenshots/04-langflow-workflow-2.png)
+### 3. Bot Integration
+![Bot Integration](screenshots/03-bob-integration.png)
 
-### 4. Hasil Rekomendasi Klinis AI
-![AI Nutrition Output](screenshots/07-output-nutrition-recommendation.png)
+### 4. Output AI
+![Output Emergency](screenshots/04-output-emergency.png)
+![Output Nutrition](screenshots/04-output-nutrition.png)
 ```

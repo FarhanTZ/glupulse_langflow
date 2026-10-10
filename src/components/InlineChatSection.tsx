@@ -85,6 +85,27 @@ const goalOptions = [
   'Analisis risiko klinis & edukasi glukosa',
 ];
 
+// Helper untuk membersihkan format LaTeX ($...$, \text{}, \approx, dll.) dari LLM agar terbaca bersih dan natural
+export const cleanLatexFormatting = (text: string): string => {
+  if (!text) return '';
+  return text
+    // Hapus \text{...} dan ambil teks di dalamnya
+    .replace(/\\text\{([^}]+)\}/g, '$1')
+    // Ganti simbol matematika LaTeX umum
+    .replace(/\\approx/g, '≈')
+    .replace(/\\le(q)?/g, '≤')
+    .replace(/\\ge(q)?/g, '≥')
+    .replace(/\\times/g, '×')
+    .replace(/\\pm/g, '±')
+    // Ganti double dash LaTeX (-- atau ---) menjadi tanda pisah (–)
+    .replace(/---/g, '—')
+    .replace(/--/g, '–')
+    // Hapus tanda dollar pembungkus $angka satuan$ contoh: $160 mg/dL$ -> 160 mg/dL
+    .replace(/\$([^$]+)\$/g, '$1')
+    // Hapus backslash yang tersisa sebelum karakter khusus
+    .replace(/\\([%#&_{}])/g, '$1');
+};
+
 export const InlineChatSection: React.FC = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
@@ -559,7 +580,7 @@ export const InlineChatSection: React.FC = () => {
                             ),
                           }}
                         >
-                          {msg.text}
+                          {cleanLatexFormatting(msg.text)}
                         </ReactMarkdown>
                       </div>
                     )}

@@ -25,6 +25,18 @@
 
 ---
 
+## 📸 Dokumentasi Visual & Screenshots
+
+| 1. Landing Page (100vh 3D Cardiac Hero) | 2. Formulir Klinis Cek Kesehatan |
+| :---: | :---: |
+| ![Landing Page](screenshots/01-landing-page.png) | ![Health Check Form](screenshots/02-health-check-form.png) |
+
+| 3. Alur Visual Langflow Canvas | 4. Rekomendasi Nutrisi Klinis AI |
+| :---: | :---: |
+| ![Langflow Workflow](screenshots/03-langflow-workflow-1.png) | ![Nutrition Output](screenshots/07-output-nutrition-recommendation.png) |
+
+---
+
 ## 📁 File Template & Dokumen Pendukung (`backend-langflow/`)
 
 Folder `backend-langflow/` di dalam repository ini sudah menyediakan seluruh aset alur AI yang siap di-import:

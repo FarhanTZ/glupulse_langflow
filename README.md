@@ -25,11 +25,15 @@
 
 ---
 
-## 📁 File Template & Dokumen Pendukung (`langflow/`)
+## 📁 File Template & Dokumen Pendukung (`backend-langflow/`)
 
-Folder `langflow/` di dalam repository ini sudah menyediakan seluruh aset alur AI yang siap di-import:
-- 📄 **Flow JSON**: `langflow/GluPulse AI Clinical Gatekeeper & Personalized Rec.json`
-- 📑 **PDF Pedoman Klinis**: `langflow/pdf/GluPulse_AI_Panduan_Klinis.pdf`
+Folder `backend-langflow/` di dalam repository ini sudah menyediakan seluruh aset alur AI yang siap di-import:
+```plaintext
+backend-langflow/
+├── glupulse-flow.json           # File JSON flow Langflow hasil export
+└── docs-ingestion/
+    └── pedoman-klinis.pdf       # Dokumen PDF pedoman medis untuk RAG
+```
 
 ---
 
@@ -66,7 +70,7 @@ langflow run
 2. Klik tombol **Upload** / **Import** di pojok kanan atas dashboard.
 3. Pilih file alur JSON yang ada di folder proyek:
    ```plaintext
-   langflow/GluPulse AI Clinical Gatekeeper & Personalized Rec.json
+   backend-langflow/glupulse-flow.json
    ```
 4. Alur canvas lengkap GluPulse akan langsung terbuka secara otomatis.
 
@@ -89,7 +93,7 @@ Cari node **Read File / File** di sebelah kiri atas canvas (yang terhubung ke no
 1. Klik kolom **Files** atau ikon upload pada node tersebut.
 2. Pilih file dokumen panduan medis yang tersedia di repositori:
    ```plaintext
-   langflow/pdf/GluPulse_AI_Panduan_Klinis.pdf
+   backend-langflow/docs-ingestion/pedoman-klinis.pdf
    ```
 3. Periksa node **Split Text** di sebelahnya: pastikan *Chunk Size* disetel ke sekitar **1000** dan *Chunk Overlap* ke **200** agar konteks klinis tidak terpotong saat diproses embedding.
 
@@ -157,10 +161,10 @@ Akses halaman **Cek Kesehatan** (`/cek-kesehatan`) untuk berinteraksi langsung d
 
 ```plaintext
 glupulse_langflow/
-├── langflow/
-│   ├── GluPulse AI Clinical Gatekeeper & Personalized Rec.json  # Export Alur Flow Langflow
-│   └── pdf/
-│       └── GluPulse_AI_Panduan_Klinis.pdf                       # Dokumen Pedoman Medis RAG
+├── backend-langflow/
+│   ├── glupulse-flow.json           # File JSON flow Langflow hasil export
+│   └── docs-ingestion/
+│       └── pedoman-klinis.pdf       # Dokumen PDF pedoman medis RAG
 ├── src/
 │   ├── components/
 │   │   ├── 3d/

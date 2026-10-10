@@ -27,13 +27,13 @@
 
 ## 📸 Dokumentasi Visual & Screenshots
 
-| 1. User Interface (Landing Page) | 2. User Interface (Cek Kesehatan) |
+| 1. Landing Page (100vh 3D Cardiac Hero) | 2. Formulir Klinis Cek Kesehatan |
 | :---: | :---: |
-| ![Landing Page](screenshots/01-user-interface-landing.png) | ![Health Check Form](screenshots/01-user-interface-health-check.png) |
+| ![Landing Page](screenshots/01-landing-page.png) | ![Health Check Form](screenshots/02-health-check-form.png) |
 
-| 3. Langflow Workflow (Canvas RAG) | 4. Output Rekomendasi Nutrisi AI |
+| 3. Langflow Workflow (Canvas Ingestion & RAG) | 4. Output Rekomendasi Nutrisi Klinis |
 | :---: | :---: |
-| ![Langflow Workflow](screenshots/02-langflow-workflow-1.png) | ![Nutrition Output](screenshots/04-output-nutrition.png) |
+| ![Langflow Workflow](screenshots/03-langflow-workflow-1.png) | ![Nutrition Output](screenshots/07-output-nutrition.png) |
 
 ---
 

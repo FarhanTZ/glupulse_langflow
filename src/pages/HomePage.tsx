@@ -34,8 +34,8 @@ export const HomePage: React.FC = () => {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal leading-[1.05] text-slate-900 tracking-[-0.05em] font-sans"
           >
-            Heal Your Body<br />
-            Naturally
+            Harmoni Gula Darah<br />
+            & Detak Jantung
           </motion.h1>
 
           {/* Subtitle */}
@@ -45,7 +45,7 @@ export const HomePage: React.FC = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="mt-4 sm:mt-5 text-sm sm:text-base md:text-lg font-light text-slate-600 leading-relaxed max-w-xl"
           >
-            Holistic wellness. Transformative clinical results.
+            Presisi klinis berbasis standar PERKENI & ADA. Analisis seketika untuk hidup lebih sehat dan tenang.
           </motion.p>
 
           {/* CTA Button */}
@@ -58,7 +58,7 @@ export const HomePage: React.FC = () => {
             onClick={() => navigate('/cek-kesehatan')}
             className="rounded-full px-7 py-3.5 sm:px-8 sm:py-4 mt-6 sm:mt-8 text-sm font-semibold text-white bg-gradient-to-r from-rose-600 via-rose-500 to-red-600 hover:from-rose-700 hover:to-red-700 shadow-lg shadow-rose-600/25 flex items-center gap-2.5 cursor-pointer transition-all duration-300 group"
           >
-            <span>Begin Your Journey</span>
+            <span>Mulai Cek Kesehatan</span>
             <ArrowRight className="w-4 h-4 text-white group-hover:translate-x-1 transition-transform" />
           </motion.button>
         </div>
@@ -85,10 +85,10 @@ export const HomePage: React.FC = () => {
             </div>
             <div>
               <div className="text-xl sm:text-2xl md:text-3xl font-bold text-slate-900 leading-tight font-sans">
-                48 Hours
+                0.8 Detik
               </div>
               <div className="text-xs sm:text-sm font-medium text-slate-500 mt-0.5">
-                Initial Consultation
+                Triase Klinis Cepat
               </div>
             </div>
           </div>
@@ -108,10 +108,10 @@ export const HomePage: React.FC = () => {
             </div>
             <div>
               <div className="text-xl sm:text-2xl md:text-3xl font-bold text-slate-900 leading-tight font-sans">
-                Initial Consultation
+                100% Pedoman
               </div>
               <div className="text-xs sm:text-sm font-medium text-slate-500 mt-0.5">
-                Healing Sessions
+                Standar Medis ADA & PERKENI
               </div>
             </div>
           </div>

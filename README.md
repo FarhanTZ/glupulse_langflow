@@ -165,6 +165,8 @@ glupulse_langflow/
 │   ├── glupulse-flow.json           # File JSON flow Langflow hasil export
 │   └── docs-ingestion/
 │       └── pedoman-klinis.pdf       # Dokumen PDF pedoman medis RAG
+├── screenshots/
+│   └── README.md                    # Dokumentasi & standar penamaan tangkapan layar
 ├── src/
 │   ├── components/
 │   │   ├── 3d/

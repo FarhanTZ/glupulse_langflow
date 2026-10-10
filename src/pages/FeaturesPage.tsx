@@ -567,7 +567,7 @@ export const FeaturesPage: React.FC = () => {
           className="rounded-2xl sm:rounded-3xl p-3 sm:p-3.5 bg-gradient-to-r from-rose-600 via-rose-700 to-red-600 text-white shadow-lg shadow-rose-600/20 flex flex-col sm:flex-row items-center justify-between gap-3"
         >
           <div className="flex items-center gap-3 text-center sm:text-left">
-            <div className="w-8 h-8 rounded-xl bg-white/15 backdrop-blur-md flex items-center justify-center shrink-0 hidden sm:flex">
+            <div className="w-8 h-8 rounded-xl bg-white/15 backdrop-blur-md items-center justify-center shrink-0 hidden sm:flex">
               <Sparkles className="w-4 h-4 text-white" />
             </div>
             <div>

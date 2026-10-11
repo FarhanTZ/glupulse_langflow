@@ -156,14 +156,19 @@ Integrasi terjadi secara komplementer antara *decision-making engine* dan *appli
 
 ---
 
-## 📁 File Template & Dokumen Pendukung (`backend-langflow/`)
+## 📁 File Template & Dokumen Pendukung (`backend-langflow/` & `dokumentasi/`)
 
-Folder `backend-langflow/` di dalam repository ini sudah menyediakan seluruh aset alur AI yang siap di-import:
+Folder `backend-langflow/` dan `dokumentasi/` menyediakan seluruh aset alur AI serta dokumen referensi proyek:
 ```plaintext
 backend-langflow/
-├── glupulse-flow.json           # File JSON flow Langflow hasil export
+├── glupulse-flow.json                               # File JSON flow Langflow hasil export
 └── docs-ingestion/
-    └── pedoman-klinis.pdf       # Dokumen PDF pedoman medis untuk RAG
+    └── pedoman-klinis.pdf                           # Dokumen PDF pedoman medis untuk RAG
+
+dokumentasi/
+├── Panduan Skenario Input Klinis GluPulse AI.pdf    # Panduan skenario pengujian & input klinis AI
+├── GluPulse_AI_Dokumentasi_Project.pdf              # Laporan & dokumentasi komprehensif proyek
+└── GluPulse_AI_Pitch_Deck.pptx                      # Presentasi Pitch Deck proyek
 ```
 
 ---
@@ -253,6 +258,10 @@ glupulse_langflow/
 │   ├── glupulse-flow.json           # File JSON flow Langflow hasil export
 │   └── docs-ingestion/
 │       └── pedoman-klinis.pdf       # Dokumen PDF pedoman medis RAG
+├── dokumentasi/
+│   ├── Panduan Skenario Input Klinis GluPulse AI.pdf # Panduan skenario uji klinis
+│   ├── GluPulse_AI_Dokumentasi_Project.pdf           # Dokumentasi lengkap proyek
+│   └── GluPulse_AI_Pitch_Deck.pptx                   # Pitch deck presentasi
 ├── screenshots/
 │   ├── 01-landing-page.png          # UI Landing Page 100vh 3D Heart
 │   ├── 02-health-check-form.png     # UI Formulir Cek Kesehatan
